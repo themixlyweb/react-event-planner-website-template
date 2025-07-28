@@ -95,11 +95,12 @@ npm run build     # Build for production</code></pre>
 
 <h3>📁 Folder Structure</h3>
 <pre><code>Eventory/
-├── components/
-├── pages/
 ├── public/
-├── scss/
-├── styles/
+├── src/
+│   ├── assets/
+│   ├── images/
+│   ├── components/
+│   ├── pages/
 ├── README.md
 └── package.json</code></pre>
 
