@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Custom Design System Definitions:
+  - Colors are defined in HSL format.
+  - The root defines the primary colors, backgrounds, and other design system values.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 0 0% 100%; /* White */
+    --foreground: 222.2 84% 4.9%; /* Dark gray */
+
+    /* Card Colors */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 222.2 84% 4.9%; /* Dark gray */
+
+    /* Popover Colors */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 222.2 84% 4.9%; /* Dark gray */
+
+    /* Primary Colors */
+    --primary: 222.2 47.4% 11.2%; /* Dark blue */
+    --primary-foreground: 210 40% 98%; /* Light blue */
+
+    /* Secondary Colors */
+    --secondary: 210 40% 96.1%; /* Light blue */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark blue */
+
+    /* Muted Colors */
+    --muted: 210 40% 96.1%; /* Light blue */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Dark gray */
+
+    /* Accent Colors */
+    --accent: 210 40% 96.1%; /* Light blue */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark blue */
+
+    /* Destructive Colors (e.g., for error messages or alerts) */
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 210 40% 98%; /* Light blue */
+
+    /* Border and Input Colors */
+    --border: 214.3 31.8% 91.4%; /* Light gray */
+    --input: 214.3 31.8% 91.4%; /* Light gray */
+    --ring: 222.2 84% 4.9%; /* Dark gray ring */
+
+    /* Border Radius */
+    --radius: 0.5rem; /* Medium rounded corners */
+
+    /* Sidebar Colors */
+    --sidebar-background: 0 0% 98%; /* Very light gray */
+    --sidebar-foreground: 240 5.3% 26.1%; /* Dark gray */
+    --sidebar-primary: 240 5.9% 10%; /* Darker gray */
+    --sidebar-primary-foreground: 0 0% 98%; /* White */
+    --sidebar-accent: 240 4.8% 95.9%; /* Light gray */
+    --sidebar-accent-foreground: 240 5.9% 10%; /* Dark gray */
+    --sidebar-border: 220 13% 91%; /* Light gray border */
+    --sidebar-ring: 217.2 91.2% 59.8%; /* Accent ring */
+  }
+
+  /* Dark Mode Styles */
+  .dark {
+    /* Base Colors for Dark Mode */
+    --background: 222.2 84% 4.9%; /* Dark gray background */
+    --foreground: 210 40% 98%; /* Light gray foreground text */
+
+    /* Card Colors for Dark Mode */
+    --card: 222.2 84% 4.9%; /* Dark gray card */
+    --card-foreground: 210 40% 98%; /* Light gray card text */
+
+    /* Popover Colors for Dark Mode */
+    --popover: 222.2 84% 4.9%; /* Dark gray popover */
+    --popover-foreground: 210 40% 98%; /* Light gray popover text */
+
+    /* Primary Colors for Dark Mode */
+    --primary: 210 40% 98%; /* Light blue */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Dark blue text */
+
+    /* Secondary Colors for Dark Mode */
+    --secondary: 217.2 32.6% 17.5%; /* Darker gray */
+    --secondary-foreground: 210 40% 98%; /* Light gray text */
+
+    /* Muted Colors for Dark Mode */
+    --muted: 217.2 32.6% 17.5%; /* Dark gray muted */
+    --muted-foreground: 215 20.2% 65.1%; /* Muted text gray */
+
+    /* Accent Colors for Dark Mode */
+    --accent: 217.2 32.6% 17.5%; /* Dark gray accent */
+    --accent-foreground: 210 40% 98%; /* Light gray accent text */
+
+    /* Destructive Colors for Dark Mode */
+    --destructive: 0 62.8% 30.6%; /* Red for errors */
+    --destructive-foreground: 210 40% 98%; /* Light gray text for destructive actions */
+
+    /* Border and Input Colors for Dark Mode */
+    --border: 217.2 32.6% 17.5%; /* Darker border */
+    --input: 217.2 32.6% 17.5%; /* Darker input */
+    --ring: 212.7 26.8% 83.9%; /* Ring color for focus states */
+
+    /* Sidebar Colors for Dark Mode */
+    --sidebar-background: 240 5.9% 10%; /* Dark sidebar background */
+    --sidebar-foreground: 240 4.8% 95.9%; /* Light sidebar text */
+    --sidebar-primary: 224.3 76.3% 48%; /* Sidebar primary color */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text for primary sidebar */
+    --sidebar-accent: 240 3.7% 15.9%; /* Sidebar accent */
+    --sidebar-accent-foreground: 240 4.8% 95.9%; /* Light accent text */
+    --sidebar-border: 240 3.7% 15.9%; /* Darker sidebar border */
+    --sidebar-ring: 217.2 91.2% 59.8%; /* Accent ring in sidebar */
+  }
+}
+
+/* Base Global Styles */
+@layer base {
+  /* Universal border styles */
+  * {
+    @apply border-border;
+  }
+
+  /* Apply background and text color globally */
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Additional custom base styles can go here */
+}
