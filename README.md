@@ -64,7 +64,7 @@
 
 <h2>📸 Screenshots</h2>
 <figure>
-  <figcaption>Includes pages like Home, About, Services, Blogs, Contact Form.</figcaption><br/>
+  <figcaption>Includes sections like Hero, About, Services, Gallery/Portfolio, Testimonials, CTA, Contact Form.</figcaption><br/>
   <img src="https://themixly.com/wp-content/uploads/2025/07/Eventory-image-2-scaled.jpg" alt="Eventory – Multi-section Preview">
 </figure>
 
